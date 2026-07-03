@@ -1,0 +1,107 @@
+#comp2{
+    padding: 0;
+    margin: 0;
+}
+#comp2{
+    background-color: #f5f5f5;
+}
+#comp2 #up{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+#comp2 #up span{
+    font-size: 16px;
+    color: #fa8d25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#comp2 #up #head{
+    color:black;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+}
+#comp2 #up #para{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+#comp2 #down #boxes svg{
+    height:30px;
+    fill:#fa8d25
+}
+#comp2 #down #boxes {
+    display: flex;
+    margin-right: 5px;
+    text-align: justify;
+}
+#comp2 #down #boxes .commonB{
+    background-color: #ffff;
+    color: black;
+    margin: 20px;
+    padding: 30px; 
+}
+#comp2 #down .commonB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#comp2 #down #boxes #head{
+    font-size: 20px;
+    font-weight:700 ;
+    margin-top: 20px;
+}
+#comp2 #down #boxes #para{
+    margin-top: 20px;
+}
+#comp2 #down #boxes #btn{
+    color: #fa8d25;
+    display: flex;
+    font-size: 12px;
+    margin: 20px;
+}
+#comp2 #down #boxes #btn svg{
+    height: 20px;
+}
+#comp2 #down #boxes :hover{
+    background:linear-gradient(140deg,#fa8d25 0%,#3308b3 100%);
+    color: #ffff;
+    fill: #ffff;
+}
+#comp2 #down #boxes #btn :hover{
+    background-color: #ffff;
+}
+@media (max-width: 992px) {
+    #comp2 #down #boxes {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+@media (max-width: 576px) {
+    #comp2 #down #boxes {
+        grid-template-columns: 1fr; /* 1 column on mobile phones */
+    }
+}
+#comp2 #down #boxes {
+    display: flex;
+    flex-wrap: wrap; /* Key fix to allow cards to wrap to the next line */
+    justify-content: center;
+    margin: 0;
+}
+#comp2 #down #boxes .commonB {
+    flex: 1 1 100%; /* Full width on mobile */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+    #comp2 #down #boxes .commonB { flex: 1 1 45%; } /* 2 columns on tablets */
+}
+@media (min-width: 992px) {
+    #comp2 #down #boxes .commonB { flex: 1 1 21%; } /* 4 columns on desktop */
+}

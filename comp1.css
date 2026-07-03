@@ -1,0 +1,98 @@
+#comp1 {
+    padding: 0;
+    margin: 0;
+}
+#comp1 {
+    /* padding: 0;
+    margin: 0; */
+    border: 1px solid red;
+    background-color: rgb(46, 36, 36);
+    color: #ffff;
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* 1. Force the left container to stretch completely from top to bottom */
+#comp1 #left {
+    display: flex;
+    flex: 1 1 100%; /* Default mobile width */
+}
+
+/* 2. Make the image element fill 100% of its parent's height */
+#comp1 #left #img {
+    background-image: url("./../images/family-using-smartphone-browsing-internet-together-at-home-on-weekend.jpg");
+    background-position: center;
+    background-size: cover; /* This ensures it crops perfectly without distortion */
+    width: 100%; 
+    height: 100%; 
+    min-height: 300px; /* Prevents the image from completely collapsing on mobile */
+}
+
+#comp1 #right {
+    flex: 1 1 100%;
+}
+
+#comp1 #right #up {
+    padding: 30px;
+    margin: 20px;
+}
+
+#comp1 #right #up span {
+    color: #fa8d25;
+    font-size: 16px;
+}
+
+#comp1 #right #up #head {
+    font-size: 36px;
+    color: #ffff;
+    padding: 10px;
+}
+
+#comp1 #right #up #para {
+    font-size: 16px;
+}
+
+#comp1 #right #down {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#comp1 #right #down #lefticons svg,
+#comp1 #right #down #righticons svg {
+    height: 50px;
+    fill: #fa8d25;
+    margin: 30px;
+}
+
+#comp1 #right #down .commonB #head {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#comp1 #down .commonB {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+#comp1 #lefticons, #comp1 #righticons {
+    flex: 1 1 100%;
+}
+
+/* Tablet & Desktop breakpoint scaling */
+@media (min-width: 768px) {
+    #comp1 #left, #comp1 #right { 
+        flex: 1 1 500px; 
+    }
+    
+    /* REMOVED: Fixed 700px height that was causing the brown gap in image_eb96cc.png */
+    #comp1 #left #img { 
+        min-height: 100%; 
+    }
+    
+    #comp1 #lefticons, #comp1 #righticons { 
+        flex: 1 1 45%; 
+    }
+}

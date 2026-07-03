@@ -1,0 +1,80 @@
+#comp4{
+padding: 0px;
+margin: 0px;
+}
+#comp4{
+    height: 400px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+#comp4  {
+    background-image: url("./../images/work-from-home-concept-couple-online-internet-working-together-using-headphone.jpg");
+    background-position: center;
+    background-size: cover;
+    /* height: 100%; */
+    width: 100%;
+   
+}
+#comp4 #right{
+    padding: 50px;
+}
+#comp4  #color{
+    background-color: rgb(34, 34, 34,0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#comp4  #right #icons{
+    display: flex;
+    align-items: end;
+    justify-items: start;
+}
+#comp4   svg{
+    height:10px;
+    display: flex;
+    fill: #ffff;
+    padding:10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #f28d25;
+    height: 30px;
+    width: 30px;
+    margin-bottom:20px;
+}
+#comp4   #head {
+    color: #ffff;
+    font-size: 36px;
+    margin-bottom:  20px;
+}
+#comp4   #head span{
+    color: #f28d25;
+}
+#comp4   #para{
+    font-size: 16px;
+    color: #ffff;
+    text-align: left;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 10px;
+}
+#comp4 #btn{
+    background: linear-gradient(140deg,#f28d25 0%,#3308b3 100%);
+    padding: 5px;
+    border-radius: 50px;
+    height: 40px;
+    width: 180px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+@media (max-width: 576px) {
+    #comp4 #icons {
+        justify-content: center; /* Centers icons on mobile */
+    }
+}

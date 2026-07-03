@@ -1,0 +1,89 @@
+#comp8{
+    padding: 0px;
+    margin: 0px;
+}
+#comp8 #up .commonbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#comp8 #up #head{
+    color: #fa8d25;
+    font-size: 16px;
+    margin-top:  50px ;
+}
+#comp8 #up #line1{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+#comp8 #up #para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+#comp8 #down #boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+#comp8 #down #boxes :hover{
+    background: linear-gradient(140deg,#fa8d25 0% ,purple 70%,#3308b3);
+    color: #ffff;  
+}
+#comp8 #down #boxes a :hover{
+color: #ffff;
+text-decoration: underline;
+}
+#comp8 #down .commonB{
+    background-color:rgb(243, 238, 238);
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center; 
+    width: 10%;
+    height: 70px;
+    margin: 30px;
+}
+#comp8 #down .commonB svg{
+    height: 35px;
+    fill: #fa8d25;
+}
+#comp8 #down #boxes svg :hover{
+    color: #ffff;
+}
+#comp8 #down #head{
+    font-size: 20px;
+    font-weight: 700 ;
+}
+#comp8 #down #para a{
+    text-decoration: none;
+   color:  #646974;
+}
+#comp8 #down #boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#comp8 #down .commonB {
+    flex: 1 1 100%; 
+    width: auto;   
+    height: auto;
+    margin: 10px;
+}
+
+@media (min-width: 576px) {
+    #comp8 #down .commonB { flex: 1 1 45%; } 
+}
+@media (min-width: 992px) {
+    #comp8 #down .commonB { 
+        
+        flex: 1 1 calc(25% - 20px); 
+        max-width: 15%;
+    }
+}

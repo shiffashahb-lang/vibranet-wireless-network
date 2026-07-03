@@ -1,0 +1,105 @@
+#comp5{
+    padding:0px;
+    margin:0px;
+}
+#comp5 #up{
+    padding: 30px;
+    margin: 30px;
+}
+#comp5 #up span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fa8d25;
+    font-size: 16px;
+    padding:20px 0px;
+}
+#comp5 #up #line1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 800;
+}
+#comp5 #up #para{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0px;
+}
+#comp5 #down #boxes {
+    display: flex;
+    align-items:start;
+    align-items: stretch;
+
+}
+/* #comp5 #down .commonB{
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}  */
+#comp5 #down #box1 #img{
+    background-image: url("./../images/practice15\ img1.jpg");
+    height: 160px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#comp5 #down #box2 #img{
+    background-image: url("./../images/practice15img2.jpg");
+    height: 160px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#comp5 #down #box3 #img{
+    background-image: url("./../images/practice15img3.jpg");
+    height: 160px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#comp5 #down span{
+    color: #646974;
+    font-size: 16px;
+    padding: 20px 0px;
+    align-items: start;
+}
+#comp5 #down #btn a{
+    text-decoration: none;
+    color: #fa8d25;
+  
+}
+#comp5 #down #btn  {
+    display: flex;
+    padding: 80px 0px;
+}
+#comp5 #down #btn svg{
+    fill: #fa8d25;
+}
+#comp5 #down #btn :hover{
+ background:linear-gradient(140deg,#fa8d25 0%,#3308b3 100%); 
+ color: #ffff;
+}
+#comp5 #down #btn svg :hover{
+    background:linear-gradient(140deg,#fa8d25 0%,#3308b3 100%); 
+ fill: #ffff;
+}
+#comp5 #down #head{
+    font-size: 20px;
+    font-weight: 300;
+   padding: 20px 0px;
+}
+#comp5 #down .commonB{
+    margin: 0px 10px;
+    padding:10px ;
+}
+#comp5 #down svg{
+    display: flex;
+    height: 20px;
+}

@@ -1,0 +1,122 @@
+#comp7 {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffff;
+}
+#comp7 #up {
+    margin-top: 20px;
+}
+#comp7 #up #head {
+    color: #fa8d25;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin-top:  50px;
+    padding: 20px;
+}
+#comp7 #up #line1 {
+    font-size: 36px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#comp7 #up #para {
+    font-size: 16px;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    align-items:center;
+    margin: 10px 350px;
+    padding:0px 20px 50px 20px;
+    width:50%;
+}
+#comp7 #down #boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#comp7 #down #boxes .commonB #image{
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.3);
+}
+#comp7 #down #boxes .commonB #des{
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.3);
+    margin-top: -20px;
+    font-size: 14px;
+    text-align: center;
+}
+#comp7 #down #boxes #box1 #image {
+    background-image: url("./../images/comp7\ image1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+    border: 10px solid white;
+    margin-right: 35px;
+}
+#comp7 #down #box2 #image{
+    background-image: url("./../images/comp7image2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+    border: 10px solid white;
+    margin-right: 35px; 
+}
+#comp7 #down #box3 #image{
+    background-image: url("./../images/comp7\ image3.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+    border: 10px solid white;
+    margin-right: 35px; 
+}
+#comp7 #down #des {
+    /* border: 2px solid black; */
+    background-color: #ffff;
+    width: 60%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin:0px 20px 0px 20px;
+    font-size: 20px;
+    font-weight:800 ;
+    padding: 10px;
+    box-shadow: 10px 10px 5px rgb(0,0,0,0.3);
+}
+#comp7 #down #des #pos{
+    color: #646974;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+}
+#comp7 #up #para {
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto; /* Replaced the restrictive 350px hard margin */
+}
+#comp7 #down #boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#comp7 #down #boxes .commonB {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#comp7 #down #boxes #box1 #image,
+#comp7 #down #boxes #box2 #image,
+#comp7 #down #boxes #box3 #image {
+    margin-right: 0; /* Remove rigid space constraints */
+    width: 200px; /* Maintain fixed card graphic width */
+}
+
+@media (min-width: 768px) {
+    #comp7 #down #boxes .commonB { flex: 1 1 30%; }
+}

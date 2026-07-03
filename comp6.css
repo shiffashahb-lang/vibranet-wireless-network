@@ -1,0 +1,108 @@
+#comp6 {
+    padding: 0px;
+    margin:0px;
+    display: flex;
+}
+#comp6 #left{
+    display: flex;
+    flex-direction:column ;
+    text-align:left ;
+}
+#comp6 #left #Head span{
+    color:#fa8d25;
+    font-size: 16px;
+    margin:90px 10px 20px 0px;
+    padding: 20px;
+}
+#comp6 #left #line1{
+    font-size: 36px;
+    font-weight: 800;
+    padding: 10px;
+}
+#comp6 #left #para{
+    font-size: 16px;
+    padding: 10px;
+}
+#comp6 #left .lists{
+    display: flex;
+    font-size: 16px;
+}
+#comp6 #icons svg{
+    fill:white;
+    height:10px;
+    background-color: #fa8d25;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    display: flex;
+}
+#comp6 #icons {
+    display: flex;
+    margin:30px;
+}
+#comp6 #icons #lefticon{
+    margin-right: 10px;
+    display: flex ;
+}
+#comp6 #icons #righticon{
+    display: flex ;
+}
+#comp6 #icons #connection{
+    margin-top: -20px;
+}
+#comp6 #icons .commonB{
+    display: flex;
+}
+#comp6 #icons #connection p{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(46, 41, 41);
+}
+#comp6 #icons #connection p:last-child{
+    font-size: 15px;
+    margin-top: -20px;
+}
+#comp6 #icons #connection span{
+    color: #fa8d25;
+    font-size: 20px;  
+}
+ #comp6 #right{
+    height: 500px;
+    width: 100%;
+ }
+ #comp6 #right #image{
+    background-image: url("./../images/comp6i\ mg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 90%;
+    display: flex;
+ }
+ #comp6 #right #circle{
+    border:10px solid #ffff;
+    border-radius: 100px;
+    width: 100px;
+    height:100px;
+    background:linear-gradient(140deg, #f28d25 0%,#3308b3 100%);
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ #comp6 #right #circle span{
+    color: #ffff;
+ }
+ #comp6 #right #circle :nth-child(2){
+    font-weight: 800;
+    font-size: 20px;
+ }
+ @media (max-width: 768px) {
+    #comp6 {
+        flex-direction: column; /* Stacks left and right main sections */
+    }
+    #comp6 .lists {
+        flex-direction: column; /* Stacks list groups vertically */
+    }
+}
